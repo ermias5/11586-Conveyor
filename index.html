@@ -29,9 +29,10 @@
             align-items: center;
         }
         .card-title {
-            font-family: 'Orbitron', 'Eurostile', 'Arial', sans-serif;
-            font-size: 2.2rem;
+            font-family:'Eurostile';
+            font-size: 1rem;
             color: #e0e0e0;
+            background-color:  #0E38EC;
             letter-spacing: 0.1em;
             margin-bottom: 1.5rem;
             text-align: center;
@@ -41,8 +42,10 @@
             display: flex;
             justify-content: center;
         }
-        .svg-wrapper svg {
+        .svg-wrapper svg,
+        .svg-wrapper object {
             width: 100%;
+            min-width: 600px;
             height: auto;
             max-height: 350px;
             display: block;
@@ -50,6 +53,10 @@
         @media (max-width: 1000px) {
             .card-container {
                 width: 98vw;
+            }
+            .svg-wrapper svg,
+            .svg-wrapper object {
+                min-width: 0;
             }
         }
         @media (max-width: 600px) {
@@ -60,7 +67,8 @@
             .card-title {
                 font-size: 1.3rem;
             }
-            .svg-wrapper svg {
+            .svg-wrapper svg,
+            .svg-wrapper object {
                 max-height: 180px;
             }
         }
@@ -68,7 +76,7 @@
 </head>
 <body>
     <div class="card-container">
-        <div class="card-title">ALTITUDE SWANN HOME</div>
+        <!-- <div class="card-title">11586C1 ROLLER CHAIN CONVEYOR</div> -->
         <div class="svg-wrapper">
             <!-- Inline SVG for best responsiveness -->
             <!--#include file="11586-home.svg" -->
