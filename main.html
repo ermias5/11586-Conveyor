@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11586 Home Card</title>
+    <!-- Google Fonts: Eurostile alternative (Orbitron) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: whitesmoke;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-container {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            padding: 2rem;
+            max-width: 99vw;
+            width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-title {
+            font-family: 'Orbitron', 'Eurostile', 'Arial', sans-serif;
+            font-size: 2.2rem;
+            color: #e0e0e0;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .svg-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .svg-wrapper svg {
+            width: 100%;
+            height: auto;
+            max-height: 350px;
+            display: block;
+        }
+        @media (max-width: 1000px) {
+            .card-container {
+                width: 98vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .card-container {
+                padding: 1rem;
+                width: 99vw;
+            }
+            .card-title {
+                font-size: 1.3rem;
+            }
+            .svg-wrapper svg {
+                max-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-title">ALTITUDE SWANN HOME</div>
+        <div class="svg-wrapper">
+            <!-- Inline SVG for best responsiveness -->
+            <!--#include file="11586-home.svg" -->
+            <!-- If server-side includes are not available, use <object> or <img> as fallback: -->
+            <object type="image/svg+xml" data="11586-home.svg" style="width:100%;height:auto;max-height:350px;">Your browser does not support SVG</object>
+        </div>
+    </div>
+</body>
+</html>
